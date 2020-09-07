@@ -1,0 +1,141 @@
+body {
+	height: 100vh;
+	background: hsl(257, 40%, 49%) url("images/bg-desktop.svg") no-repeat left top;
+}
+
+/* Header - company logo */
+.logo-div {
+	padding: 4% 5% 0 5%;
+}
+
+.logo-size {
+	max-width: 220px;
+}
+
+/* Article - Company description and CTA */
+.flex-container {
+	display: flex;
+}
+
+.main-img-div {
+	padding: 5% 4% 1.5% 5%;
+}
+
+.img-styling {
+	max-width: 100%;
+	height: auto;
+}
+
+.article-styling {
+	color: #fff;
+	padding: 6% 10% 1.5% 0;
+	max-width: 457.406px;
+	min-width: 428.250px;
+	height: auto;
+}
+
+h1 {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	font-size: 2.5rem;
+	line-height: 1.5;
+}
+
+p {
+	font-family: 'Open Sans', sans-serif;
+	line-height: 1.6;
+}
+
+.button-styling {
+	font-family: 'Poppins', sans-serif;
+	color: hsl(257, 40%, 49%);
+	border: 0;
+	border-radius: 30px 30px;
+	box-shadow: 2px 6px 10px rgb(77, 77, 77);
+	font-size: 1.1875em;
+	padding: 13px 50px;
+	margin: 10px 0;
+}
+
+/* Social media links */
+.social-div {
+	float: right;
+	margin-right: 3.7em;
+}
+
+.social-styling {
+	margin: 0.1em 0.35em;
+}
+
+.social-div svg {
+	fill: #fff;
+}
+
+/* Footer Attribution Section */
+.attribution {
+	font-size: 11px;
+	text-align: center;
+	clear: right;
+	color: #fff;
+	margin: 0;
+}
+
+.attribution a {
+	color: hsl(214, 97%, 71%);
+}
+
+/* Media Queries */
+@media (max-width: 1140px) {
+	.flex-container {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.main-img-div {
+		padding: 13% 10%;
+	}
+
+	.article-styling {
+		padding: 5%;
+		text-align: center;
+	}
+
+	.button-styling {
+		padding: 13px 64px;
+	}
+
+	.social-div {
+		text-align: center;
+		float: none;
+		margin: 0;
+		padding: 7% 0;
+	}
+}
+
+@media (max-width: 512px) {
+	.article-styling {
+		padding: 0 10%;
+		max-width: unset;
+		min-width: unset;
+		height: auto;
+	}
+
+	h1 {
+		font-size: 1.5rem;
+	}
+
+	.social-div {
+		padding: 15% 0;
+	}
+
+	.social-styling {
+		width: 32px;
+		height: 32px;
+	}
+}
+
+@media (max-width: 375px) {
+	body {
+		background: hsl(257, 40%, 49%) url("images/bg-mobile.svg") no-repeat left top;
+	}
+}
